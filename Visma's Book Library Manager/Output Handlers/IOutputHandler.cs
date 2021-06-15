@@ -1,4 +1,6 @@
-﻿namespace Visma_s_Book_Library_Manager
+﻿using System.Collections.Generic;
+
+namespace Visma_s_Book_Library_Manager
 {
     /// <summary>
     /// Interface for classes who handle error/confirmation message output
@@ -16,5 +18,11 @@
         /// </summary>
         /// <param name="message"></param>
         void PrintConfirmation(string message);
+
+        /// <summary>
+        /// Displays all the books and their properties
+        /// </summary>
+        /// <param name="books"></param>
+        public void DisplayData(List<Book> books);
     }
 }

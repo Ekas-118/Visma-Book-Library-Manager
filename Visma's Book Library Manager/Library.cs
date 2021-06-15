@@ -1,5 +1,4 @@
-﻿using ConsoleTables;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -157,7 +156,7 @@ namespace Visma_s_Book_Library_Manager
         }
 
         /// <summary>
-        /// Prints a table of all books and their properties to the console
+        /// Lists all books and their properties
         /// </summary>
         /// <param name="byAuthor">Author to filter by</param>
         /// <param name="byCategory">Category to filter by</param>
@@ -198,18 +197,11 @@ namespace Visma_s_Book_Library_Manager
 
             if (_books.Count == 0)
             {
-                Console.WriteLine("No books found.");
+                _output.PrintError("No books found.");
                 return;
             }
 
-            // Create and print table to the console
-            var table = new ConsoleTable("Name", "Author", "Category", "Language", "Publication year", "ISBN", "Reader ID", "Date taken", "Return date");
-            foreach (var book in _books)
-            {
-                table.AddRow(book.Name, book.Author, book.Category, book.Language, book.PublicationYear, book.ISBN, book.Reader, book.DateTaken, book.ReturnDate);
-            }
-            table.Write(Format.MarkDown);
-            Console.WriteLine($"[{_books.Count} results]");
+            _output.DisplayData(_books);
         }
 
         /// <summary>

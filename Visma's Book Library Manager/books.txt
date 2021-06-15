@@ -1,1 +1,0 @@
-[{"Name":"a","Author":"b","Category":"c","Language":"d","PublicationYear":2000,"ISBN":"1234-5","Reader":null,"DateTaken":null,"ReturnDate":null}]

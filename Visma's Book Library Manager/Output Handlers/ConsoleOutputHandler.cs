@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleTables;
+using System;
+using System.Collections.Generic;
 
 namespace Visma_s_Book_Library_Manager
 {
@@ -17,6 +19,7 @@ namespace Visma_s_Book_Library_Manager
             Console.WriteLine(message);
             Console.ResetColor();
         }
+
         /// <summary>
         /// Prints a green confirmation message to the console
         /// </summary>
@@ -26,6 +29,22 @@ namespace Visma_s_Book_Library_Manager
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(message);
             Console.ResetColor();
+        }
+
+        /// <summary>
+        /// Prints a table of all books and their properties to the console
+        /// </summary>
+        /// <param name="books"></param>
+        public void DisplayData(List<Book> books)
+        {
+            // Create and print table to the console
+            var table = new ConsoleTable("Name", "Author", "Category", "Language", "Publication year", "ISBN", "Reader ID", "Date taken", "Return date");
+            foreach (var book in books)
+            {
+                table.AddRow(book.Name, book.Author, book.Category, book.Language, book.PublicationYear, book.ISBN, book.Reader, book.DateTaken, book.ReturnDate);
+            }
+            table.Write(Format.MarkDown);
+            Console.WriteLine($"[{books.Count} results]");
         }
     }
 }
