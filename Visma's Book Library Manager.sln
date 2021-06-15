@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visma's Book Library Manager", "Visma's Book Library Manager\Visma's Book Library Manager.csproj", "{1B5E7549-5BCE-4E7B-8880-6B987DB9A76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visma's Book Library Manager.Tests", "Visma's Book Library Manager.Tests\Visma's Book Library Manager.Tests.csproj", "{C79F1AA9-F5F1-4309-8FFD-3442101D0263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5E7549-5BCE-4E7B-8880-6B987DB9A76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5E7549-5BCE-4E7B-8880-6B987DB9A76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5E7549-5BCE-4E7B-8880-6B987DB9A76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5E7549-5BCE-4E7B-8880-6B987DB9A76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79F1AA9-F5F1-4309-8FFD-3442101D0263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79F1AA9-F5F1-4309-8FFD-3442101D0263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79F1AA9-F5F1-4309-8FFD-3442101D0263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79F1AA9-F5F1-4309-8FFD-3442101D0263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F344BA59-D189-4365-840A-729EE982314A}
+	EndGlobalSection
+EndGlobal
