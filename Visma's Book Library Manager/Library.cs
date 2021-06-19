@@ -81,6 +81,12 @@ namespace Visma_s_Book_Library_Manager
         /// <param name="days">The amount of days to lend the book</param>
         public void TakeBook(string isbn, string reader, int months, int days)
         {
+            if (months < 0 || days < 0 || (months == 0 && days == 0))
+            {
+                _output.PrintError("The period for taking a book must be longer than 0 days");
+                return;
+            }
+
             if (months > 2 || (months == 2 && days > 0))
             {
                 _output.PrintError("Taking books for longer than 2 months is not allowed.");

@@ -48,6 +48,24 @@ namespace Visma_s_Book_Library_Manager.Tests
 
         #region TakeBook Tests
 
+        [Theory]
+        [InlineData (0, 0)]
+        [InlineData (-1, 10)]
+        [InlineData (10, -10)]
+        public void TakeBook_WhenPeriodIsZeroOrLessDays_DoesNotGiveBook(int months, int days)
+        {
+            var tempfile = Path.GetTempFileName();
+            var library = new Library(new JsonFileBookStorage(tempfile), new ConsoleOutputHandler());
+            library.AddBook("name", "author", "category", "language", 2000, "9999-01-101-0");
+
+            library.TakeBook("9999-01-101-0", "readerID0001", months, days);
+            var bookAttemptedToTake = library.GetBooks().ToList().Find(x => x.ISBN == "9999-01-101-0");
+
+            Assert.Null(bookAttemptedToTake.Reader);
+
+            File.Delete(tempfile);
+        }
+
         [Fact]
         public void TakeBook_WhenPeriodIsLongerThanTwoMonths_DoesNotGiveBook()
         {
