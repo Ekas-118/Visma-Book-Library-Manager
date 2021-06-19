@@ -11,7 +11,6 @@ namespace Visma_s_Book_Library_Manager.Tests
         public void Read_WhenFileDoesntExist_ReturnsEmptyList()
         {
             var tempfile = Path.GetTempFileName();
-            File.Delete(tempfile);
             var storage = new JsonFileBookStorage(tempfile);
 
             var actual = storage.Read();

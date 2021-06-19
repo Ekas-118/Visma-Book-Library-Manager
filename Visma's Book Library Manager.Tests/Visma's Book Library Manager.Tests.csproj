@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Visma's Book Library Manager\Visma's Book Library Manager.csproj" />
+    <ProjectReference Include="..\Book Library Codebin\Book Library Codebin.csproj" />
   </ItemGroup>
 
 </Project>

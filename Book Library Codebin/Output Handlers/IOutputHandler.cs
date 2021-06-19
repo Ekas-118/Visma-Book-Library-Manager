@@ -3,7 +3,7 @@
 namespace Visma_s_Book_Library_Manager
 {
     /// <summary>
-    /// Interface for classes who handle error/confirmation message output
+    /// Interface for classes who handle various message output
     /// </summary>
     public interface IOutputHandler
     {

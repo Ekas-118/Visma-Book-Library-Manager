@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Visma_s_Book_Library_Manager
 {
     /// <summary>
-    /// Class for error/confirmation message output to the console
+    /// Class responsible for message output to the console
     /// </summary>
     public class ConsoleOutputHandler : IOutputHandler
     {

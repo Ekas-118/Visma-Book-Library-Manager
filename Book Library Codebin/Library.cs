@@ -83,7 +83,7 @@ namespace Visma_s_Book_Library_Manager
         {
             if (months < 0 || days < 0 || (months == 0 && days == 0))
             {
-                _output.PrintError("The period for taking a book must be longer than 0 days");
+                _output.PrintError("The period for taking a book must be longer than 0 days.");
                 return;
             }
 
