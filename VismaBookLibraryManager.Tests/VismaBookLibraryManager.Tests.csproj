@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Visma_s_Book_Library_Manager.Tests</RootNamespace>
+    <RootNamespace>VismaBookLibraryManager.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Book Library Codebin\VismaBookLibraryManager.Core.csproj" />
+    <ProjectReference Include="..\VismaBookLibraryManager.Core\VismaBookLibraryManager.Core.csproj" />
   </ItemGroup>
 
 </Project>
