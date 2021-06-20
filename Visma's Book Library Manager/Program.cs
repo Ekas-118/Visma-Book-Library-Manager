@@ -1,8 +1,9 @@
 ﻿using Autofac;
 using System.CommandLine;
 using System.CommandLine.Invocation;
+using VismaBookLibraryManager.Core;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.ConsoleApp
 {
     class Program
     {

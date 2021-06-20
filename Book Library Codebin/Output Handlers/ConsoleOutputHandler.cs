@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.Core
 {
     /// <summary>
     /// Class responsible for message output to the console

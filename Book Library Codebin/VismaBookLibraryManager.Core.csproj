@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Book_Library_Codebin</RootNamespace>
+    <RootNamespace>VismaBookLibraryManager.Core</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

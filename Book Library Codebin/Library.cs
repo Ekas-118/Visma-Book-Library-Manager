@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.Core
 {
     public class Library
     {

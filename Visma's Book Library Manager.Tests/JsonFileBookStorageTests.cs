@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using VismaBookLibraryManager.Core;
 using Xunit;
 
 namespace Visma_s_Book_Library_Manager.Tests

@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.Core
 {
     /// <summary>
     /// Interface for classes that store information about books in a library

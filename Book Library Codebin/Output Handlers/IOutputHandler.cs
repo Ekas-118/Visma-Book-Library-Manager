@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.Core
 {
     /// <summary>
     /// Interface for classes who handle various message output

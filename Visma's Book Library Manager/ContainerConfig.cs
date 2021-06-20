@@ -1,6 +1,7 @@
 ﻿using Autofac;
+using VismaBookLibraryManager.Core;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.ConsoleApp
 {
     public static class ContainerConfig
     {

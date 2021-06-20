@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Visma_s_Book_Library_Manager
+namespace VismaBookLibraryManager.Core
 {
     /// <summary>
     /// Class that uses a json file for storing books

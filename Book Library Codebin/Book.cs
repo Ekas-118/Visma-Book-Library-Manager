@@ -1,4 +1,4 @@
-﻿namespace Visma_s_Book_Library_Manager
+﻿namespace VismaBookLibraryManager.Core
 {
     /// <summary>
     /// Class for storing the properties of a book
