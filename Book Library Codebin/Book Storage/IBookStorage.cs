@@ -14,12 +14,12 @@ namespace Visma_s_Book_Library_Manager
         /// Returns a list of all books in the book storage
         /// </summary>
         /// <returns></returns>
-        List<Book> Read();
+        public List<Book> Read();
 
         /// <summary>
         /// Updates the book storage with a new list of books
         /// </summary>
         /// <param name="books"></param>
-        void Write(IEnumerable<Book> books);
+        public void Write(IEnumerable<Book> books);
     }
 }
