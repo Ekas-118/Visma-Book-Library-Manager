@@ -10,7 +10,7 @@ namespace VismaBookLibraryManager.ConsoleApp
         static void Main(string[] args)
         {
             // Configure IoC container
-            var container = ContainerConfig.Configure();
+            var container = ConfigureContainer();
 
             // Get an instance of Library
             using var scope = container.BeginLifetimeScope();
@@ -70,6 +70,17 @@ namespace VismaBookLibraryManager.ConsoleApp
                     delete
                 };
             cmd.Invoke(args);
+        }
+
+        private static IContainer ConfigureContainer()
+        {
+            var builder = new ContainerBuilder();
+
+            builder.RegisterType<Library>().AsSelf();
+            builder.RegisterType<JsonFileBookStorage>().As<IBookStorage>().WithParameter("filename", "books.json");
+            builder.RegisterType<ConsoleOutputHandler>().As<IOutputHandler>();
+
+            return builder.Build();
         }
     }
 }
